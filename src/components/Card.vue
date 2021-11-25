@@ -34,10 +34,10 @@ props: {
                 height: 50%;
                 }
                 img{
-                    object-fit: cover;
+                    object-fit: contain;
                     width: 100%;
                     height: 100%;
-                    padding: .3rem;
+                    object-position: top;
                 }
             .text-container{
                 padding-top: 1rem;

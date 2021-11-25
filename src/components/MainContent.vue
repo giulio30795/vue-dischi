@@ -2,7 +2,7 @@
     <section>
         <div class="container">
                 <ul class="list-unstyled d-flex flex-wrap row justify-content-center ">
-                    <li class="col-2" v-for="(element, index) in playList" :key="`list-${index}`">
+                    <li class="" v-for="(element, index) in playList" :key="`list-${index}`">
                         <Card 
                         :poster="element.poster"
                         :title="element.title"
@@ -54,6 +54,7 @@ section {
     overflow: auto;
     li{
         margin: 1rem 0;
+        width: calc(100% / 8);
     }
 }
 
