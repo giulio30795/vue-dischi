@@ -19,7 +19,5 @@ export default {
 </script>
 <style lang="scss">
 @import '~bootstrap/scss/bootstrap.scss';
-#app{
-  background-color: #1d2d3c;
-}
+
 </style>
