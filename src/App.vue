@@ -19,5 +19,9 @@ export default {
 </script>
 <style lang="scss">
 @import '~bootstrap/scss/bootstrap.scss';
-
+#app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 </style>
