@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header @userselection="FilterAlbum"/>
-    <MainContent :Albumlist="playList"/>
+    <MainContent :Albumlist="test"/>
   </div>
 </template>
 
