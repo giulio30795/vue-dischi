@@ -7,6 +7,7 @@
             name="generi"
             @change="$emit('userselection', Choice)"
             >
+          <option value="tutti">Tutti i Generi</option>
           <option value="Pop">Pop</option>
           <option value="Rock">Rock</option>
           <option value="Jazz">Jazz</option>

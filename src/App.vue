@@ -33,9 +33,13 @@ computed:{
   test(){
     if(this.playList === ''){
           return this.playList;
-        } else {
+        }
+        else if(this.Choice === "tutti") {
+          return this.playList;
+        }
+        else {
             return this.playList.filter(item =>{
-            return item.genre.toLowerCase().includes(this.Choice.toLowerCase())
+            return item.genre.includes(this.Choice)
           })
         }
   }
