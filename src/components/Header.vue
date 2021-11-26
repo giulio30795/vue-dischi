@@ -23,8 +23,9 @@ name: 'Header',
 data(){
     return {
         Choice:'',
-    } 
+    }
 },
+
 }
 </script>
 
@@ -40,7 +41,6 @@ div {
         background-color: #2E3A46;
         border: 1px solid white;
         width: 150px;
-
     }
-}   
+}
 </style>
