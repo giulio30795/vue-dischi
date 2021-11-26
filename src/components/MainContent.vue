@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="container">
-            <ul  v-if="playList.length  !== 0"
+            <ul  v-if="Albumlist.length  !== 0"
             class="list-unstyled d-flex flex-wrap row justify-content-center ">
-                <li v-for="(element, index) in playList" :key="`list-${index}`">
+                <li v-for="(element, index) in Albumlist" :key="`list-${index}`">
                     <Card 
                     :poster="element.poster"
                     :title="element.title"
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+
 import Card from './Card.vue'
 
 export default {
@@ -35,24 +35,11 @@ name: 'MainContent',
 components: {
     Card,
 },
-data(){
-    return {
-        playList: [],
-    }
+props:{
+  Albumlist: Array,
 },
 
-created() {
-    this.getMusic();
-},
-
-methods: {
-    getMusic(){
-        axios.get('https://flynn.boolean.careers/exercises/api/array/music')
-        .then(response => (this.playList = response.data.response))
-    }
 }
-}
-
 </script>
 
 <style scoped lang="scss">

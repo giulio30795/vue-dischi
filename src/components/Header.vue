@@ -1,18 +1,29 @@
 <template>
   <div class="p-3 d-flex justify-content-between">
       <img src="../assets/logo.png" alt="Logo">
-      <select class="my-2" name="generi" id="generi">
+      <select 
+            v-model="Choice"
+            class="my-2" 
+            name="generi"
+            @change="$emit('userselection', Choice)"
+            >
           <option value="Pop">Pop</option>
-          <option value="Pop">Rock</option>
-          <option value="Pop">Jazz</option>
-          <option value="Pop">Metal</option>
+          <option value="Rock">Rock</option>
+          <option value="Jazz">Jazz</option>
+          <option value="Metal">Metal</option>
       </select>
   </div>
 </template>
 
 <script>
 export default {
-name: 'Header'
+name: 'Header',
+
+data(){
+    return {
+        Choice:'',
+    } 
+},
 }
 </script>
 
