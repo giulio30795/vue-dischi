@@ -36,7 +36,7 @@ components: {
     Card,
 },
 props:{
-  Albumlist: Array,
+    Albumlist: Array,
 },
 
 }
@@ -63,5 +63,4 @@ section {
         height: 200px;
     }
 }
-
 </style>
