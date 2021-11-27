@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="container">
-            <ul  v-if="Albumlist.length  !== 0"
+            <ul  v-if="albumlist.length  !== 0"
             class="list-unstyled d-flex flex-wrap row justify-content-center ">
-                <li v-for="(element, index) in Albumlist" :key="`list-${index}`">
+                <li v-for="(element, index) in albumlist" :key="`list-${index}`">
                     <Card 
                     :poster="element.poster"
                     :title="element.title"
@@ -36,7 +36,7 @@ components: {
     Card,
 },
 props:{
-    Albumlist: Array,
+    albumlist: Array,
 },
 
 }

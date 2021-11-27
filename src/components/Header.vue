@@ -7,11 +7,10 @@
             name="generi"
             @change="$emit('userselection', Choice)"
             >
-          <option value="tutti">Tutti i Generi</option>
-          <option value="Pop">Pop</option>
-          <option value="Rock">Rock</option>
-          <option value="Jazz">Jazz</option>
-          <option value="Metal">Metal</option>
+            <option value="tutti">Tutti i Generi</option>
+            <option v-for="(element, index) in genreList" :key="`genre-${index}`"
+            >{{ element }}
+            </option>
       </select>
   </div>
 </template>
@@ -20,12 +19,15 @@
 export default {
 name: 'Header',
 
+props: {
+    genreList: Array,
+},
+
 data(){
     return {
         Choice:'',
     }
 },
-
 }
 </script>
 
